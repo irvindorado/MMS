@@ -29,8 +29,6 @@ mms_fpi = sp.mms.fpi(trange=trange, data_rate=rate, datatype='dis-moms')
 mms_extof = sp.mms.eis(trange=trange, data_rate=brate, datatype='extof', varformat='*proton*flux*_')
 mms_phxtof = sp.mms.eis(trange=trange, data_rate=brate, datatype='phxtof', varformat='*proton*_flux*')
 
-
-
 # ------------
 # Cut
 # ------------
@@ -69,7 +67,6 @@ ax.plot(bkgd_eis[0], bkgd_eis[1], 'k--')
 plt.legend(['FPI', 'EIS [ExTOF]', 'EIS [PHxTOF]', 'Typical lobe spectrum (EIS)'], loc ="lower left")
 
 #plt.title('Ion Energy Spectrum \n \n 2015-11-04 / 04:58:05 - 04:58:25 \n Shock Angle: 83.9371 @ Mach number 10.9859')
-
 
 ax.set_xscale('log')
 ax.set_yscale('log')
